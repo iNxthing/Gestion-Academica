@@ -112,7 +112,8 @@ BEGIN
         u.documento AS Documento, 
         u.nombre AS Profesor, 
         a.nombre AS Asignatura, 
-        u.usr AS Usuario
+        u.usr AS Usuario,
+        u.pass AS Clave
     FROM usuario u
     INNER JOIN asignatura a ON u.idAsignatura = a.id_asignatura
     WHERE u.idPerfil = 2
